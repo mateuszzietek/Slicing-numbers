@@ -1,6 +1,6 @@
 Attribute VB_Name = "LMR"
-'This functions returns the specified number of characters from string inside cell (the same as workbook function LEFT)
-'But if output will be just number it will be number in cell. Ther is not necessery to convert cell to number.
+'These functions return the specified number of characters from a string inside a cell (the same as workbook function LEFT)
+'But if the output will be just number it will be number in the cell. There is not necessary to convert the cell to a number.
 
 'ALTERNATIVE FOR LEFT()
 Public Function LEFT_NUM(cv As String, ch As Long)
@@ -12,7 +12,7 @@ check = IsNumeric(output)
 
     If check = True Then
     
-        LEFT_NUM = CInt(output)
+        LEFT_NUM = CLng(output)
     
     Else
     
@@ -33,7 +33,7 @@ check = IsNumeric(output)
 
     If check = True Then
     
-       MID_NUM = CInt(output)
+       MID_NUM = CLng(output)
     
     Else
     
@@ -54,7 +54,7 @@ check = IsNumeric(output)
 
     If check = True Then
     
-       RIGHT_NUM = CInt(output)
+       RIGHT_NUM = CLng(output)
     
     Else
     
